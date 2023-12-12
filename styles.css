@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  font-family: Roboto, sans-serif;
+}
+body {
+  margin: 0;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #04aa6d;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+header,
+footer {
+  font-weight: 400;
+  text-align: center;
+  float: left;
+  height: 100px;
+  width: 100%;
+  border: 2px solid black;
+  background: black;
+  color: white;
+}
+.homepage {
+  background-color: lavender;
+  padding-left: 40px;
+  padding-right: 40px;
+  list-style-type: none;
+}
+.coffee {
+  text-align: center;
+  border: 2px solid black;
+  background-color: burlywood;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.img-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.img-container img {
+  box-shadow: 2px 2px 4px black;
+  width: 350px;
+  height: 350px;
+}
+.musica {
+  text-align: center;
+  display: inline-flexbox;
+  background: lightgreen;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid black;
+}
+.musica .spotify {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding: 30px;
+}
+.musica img {
+  width: 200px;
+  height: 400px;
+}
+.topartists {
+  text-align: left;
+}
+.topsongs {
+  text-align: right;
+}
+.profilepic {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+.profilepic img {
+  display: block;
+  margin: auto;
+  box-shadow: 5px 5px 5px 5px #777777;
+  height: 320px;
+  width: 480px;
+}
+.aboutme {
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.connect {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  border: 2px black;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .img-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  img {
+    margin: 10px;
+    box-shadow: 2px 2px 4px black;
+    width: 300px;
+    height: 300px;
+  }
+  * header footer {
+    font-size: 1.6rem;
+    color: black;
+  }
+  .profilepic img {
+    max-width: 400px;
+    max-height: 280px;
+  }
+}
+@media (max-width: 480px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+  * header footer {
+    font-size: 1.6rem;
+    color: black;
+  }
+  .img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    margin: 10px;
+    box-shadow: 2px 2px 4px black;
+    width: 200px;
+    height: 200px;
+  }
+  .profilepic img {
+    max-width: 300px;
+    max-height: 180px;
+  }
+}
